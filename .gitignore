@@ -1,0 +1,4 @@
+secret_key.txt
+.idea/
+__pycache__/
+*.py[cod]
