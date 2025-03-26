@@ -1,0 +1,24 @@
+{% extends "start/base.html" %}
+{% block title %}Start page {% endblock %}
+
+{% block content %}
+    <div id="app">
+        <h1>[[ message ]]</h1>
+    </div>
+{% endblock %}
+
+{% block script %}
+<script type="module">
+    import { createApp } from 'vue'
+
+    createApp({
+        delimiters: ['[[', ']]'],
+        components: {},
+        data() {
+            return {
+                message: 'Hello Vue!'
+            }
+        }
+    }).mount('#app')
+</script>
+{% endblock %}
